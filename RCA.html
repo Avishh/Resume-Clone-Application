@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- <script type="text/javascript" src="MooTools-Core-1.6.0.js"></script>
+    <script type="text/javascript" src="selectivizr-min.js"></script> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <!-- <link rel="stylesheet" type="text/css" href="/templates/css/first.css"> -->
+    <!-- <link href="{{ url_for('static',filename='css/first.css')}}" rel="stylesheet"> -->
+    <link href="css/first.css" rel="stylesheet">
+    <script type="text/javascript" src="static/js/final_try.js"></script>
+</head>
+
+
+<body ng-app="app">
+        <div class="fluid-container">
+                <div class="rowaa" style="min-height:65px;">
+        
+                    <div class="col-sm-3" style="margin-top: 18px;">
+                        <img src="static/images/dhiomics.png" alt="Dhiomics" style="padding-bottom: 0px; margin-top: 0px;padding-top: 0px;padding-bottom: 0px;border: 0px;"
+                        />
+                    </div>
+                    <div class="col-sm-6">
+                        <h2  style="text-align: center;color: #474e5d;width: 100%; margin-top:10px;">
+                            <b>Resume Cloning and Categorization</b>
+                        </h2>
+                    </div>
+                </div>
+                <div class="row2" style="min-height:65px;">
+                        
+                    <div class="icon-bar" style="min-height:65px;">
+                        <a href="#" style="height:65px;">
+                            <i class="fa fa-user" style="font-size:25px;">
+                                 <br>   <label style="font-size:12px;">Welcome Mike</label>
+                            </i>
+                        </a>
+                        <a href="#" style="font-size:25px;">
+                            <i class="fa fa-cogs">
+                                    <br>   <button style="border-left-width: 0px;border-top-width: 0px;border-right-width: 0px;border-bottom-width: 0px;font-size:14px;background-color:#687792;color:white;" onclick="homepage();"  >Reset</button>
+                            </i>
+                        </a>
+                    
+                    </div>
+                   
+        
+                        
+                        <!-- <p style="background-color:#687792;color:white;margin-left:1100px;margin-bottom:0px;">
+                                <b>Welcome Mike</b>
+                            </p> -->
+                    </div>
+                </div>
+        <div class="row3">
+            <div class="tab">
+
+
+                <button class="tablinks" onclick="openCity(event, 'Search Profile');DownDownload();DownRemove();" id="defaultOpen">
+                    <b>Search Profile</b>
+                </button>
+                <button class="tablinks" onclick="openCity(event, 'UR');adminReturning();UploadR();UploadR1();">
+                    <b>Upload Resume</b>
+                </button>
+                <button class="tablinks" onclick="openCity(event, 'Admin Panel');adminReturning3();">
+                    <b>Admin Panel</b>
+                </button>
+
+            </div>
+        </div>
+        <div id="Search Profile" class="tabcontent" style="color:#0000b3" "background-color:#0000b3">
+                <div class="container-fuil">
+                    <ul class="nav nav-tabs" id="tabs">
+                        
+                        <li class="active">
+                            <a data-toggle="tab" href="#FFT" onclick="">
+                                <b>Skill Set Search</b>
+                            </a>
+                        </li>
+                        <li >
+                            <a data-toggle="tab" href="#JD" onclick="">
+                                <b>Job Description</b>
+                            </a>
+                        </li>
+                        <li>
+                            <a data-toggle="tab" href="#DC" onclick="DownDownload();DownRemove();">
+                                <b>Download Category</b>
+                            </a>
+                        </li>
+                        
+        
+                    </ul>
+                    <div class="tab-content">
+                            <div id="JD" class="tab-pane fade">
+                                    <div class="row6" style="min-height:100px;">
+                                        <div class="col-sm-3" style="margin-top: 45px;padding-left:50px;">
+                                            <lable class="SecondClassDropdown"><b>Category</b></lable>
+                                            <select id='DropDownSecondPage' onchange="JobDesR1();" style="max-width:100%" name="Category" class="form-control input-sm">
+                                                <option value="Select">Select</option>
+                                            </select>
+                
+                                        </div>
+                                        <div class="col-sm-6 col-sm-offset-2" style="left:0px;">
+                                            <ul class="nav nav-tabs" id="tabs">
+                                                <li class="active">
+                                                    <a data-toggle="tab" href="#upl" >
+                                                        <b>Upload</b>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a data-toggle="tab" href="#search" >
+                                                        <b>Text Search</b>
+                                                    </a>
+                                                </li>
+                
+                                            </ul>
+                                            <div class="tab-content">
+                                                <div id="upl" class="tab-pane fade in active">
+                                                    <div class="col-sm-8" style="padding-left: 0px; padding-right: 0px;">
+                                                        
+                                                            <iframe style="margin-top: 0px;border-top-width: 0px;border-left-width: 0px;border-right-width: 0px; border-bottom-width: 0px;"
+                                                                width="0" height="0" border="0" name="dummyframe" id="dummyframe"></iframe>
+                                                            <form id="form3" action="http://127.0.0.1:5000/UploadJob" target="dummyframe" method="post" enctype="multipart/form-data">
+                                                                <div class="col-sm-9" style="right: 0px;padding:0px;">
+                                                                <input onchange="JobDesR1();" style="max-width:100%;height: 35px;border: 2px solid #ddd;border-radius: 4px;padding-top: 4px; padding-left: 5px;" class="SecondClassDropdown" id="fileInputUpload" type="file" name="file" size="50" >
+                                                                </div>
+                                                                <div class="col-sm-2" style="top: 4px;left: 0px;">
+                                                                    <button  type="submit" id="SecondClassDropdown1" value="Upload" onclick="JobDesR1();">Upload</button>
+                                                                </div>
+                                                            </form>
+                                                        
+                                                    </div>
+                                                    
+                                                    <div class="col-sm-2">
+                                                            <button class="SecondClassDropdown" onclick="JobDesR1();getWorldCloud();JobDesR3();" style="margin-left:0px;margin-top: 24px;float:right;">Search</button>
+                                                    </div>
+                                                </div>    
+                                                    
+        
+                                                <div id="search" class="tab-pane fade">
+                                                    <div class="row" style="padding-left: 0px;">
+                                                        <div class="col-sm-7">
+                                                        <form id="Form_TextSearchJD">
+                                                        <input type="text" id='SearchText_SearchingText' onkeyup="JobDesR1();" name="search" placeholder="KeyWords.." style="width: 100%; height:35px;margin-left: 0px;padding-left: 5px; margin-top:20px;margin-right:0px;"
+                                                        />
+                                                        </form>
+                                                        </div>
+                                                        <div class="col-sm-3">
+                                                        <button style="margin-left:0px;    margin-top: 23px;" onclick="textTextText();JobDesR4();">Search</button>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                            
+                                        </div>
+                                               
+                                        </div>
+                                        <div class="col-sm-1" style="padding-right:0px;">
+                                                
+                                                        <button type="button" class="btn btn-default btn-sm" onclick="JobDesR1();JobDesR2();" style="float:right;">
+                                                          <span class="glyphicon glyphicon-refresh"></span> 
+                                                        </button>
+                                              </div>
+                                    </div>    
+                                    <div class="row62" style="min-height: 330px;">
+                                        <div class="col-sm-6" style="padding-left:50px;">
+                                            <div id="secondPage_UploadedFile"></div>
+                                            <div id="SecondB_HH"></div>
+                                            <div id="SecondB">
+                                                <div id="secondPageFirstTable">
+                                                </div>
+                                            </div>
+                                            <div>
+                                                    <!-- Changed -->
+                                                <iframe id="frameDDD" style="display:none"></iframe>
+                                                <button type="button" id="mergeDownload2" onclick="downloadMulti2();" style="visibility: hidden;">Download</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="row123456">
+                                                <label>Resume Wordcloud</label>
+                                                <a onclick="helll();"></a>
+                                            </div>
+                                            <div id="WorldCloudSpace1">
+                
+                                                <img src="static/images/wordcloud1.png" alt="Wordcloud" id="WorldCloud1">
+                                            </div>
+                                        </div>
+                                    </div>
+                
+                                    </form>
+                                    
+                                    <div class="row895">
+                                        <div class="col-sm-4">
+                                        <!--<button style="margin-left:40px;">Email</button>-->
+                                    </div>
+                                    <div class="col-sm-6" id = "uploadJD5">
+                                    </div>
+            
+                                    </div>
+                                </div>
+                        <div id="FFT" class="tab-pane fade in active">
+                            
+                            <div class="row8" style="margin:0px;height:75px;">
+                                <div class="col-sm-3" style="padding-left:35px;margin-top:30px;">
+                                    <form id="Form_SkillSet1">
+                                        <lable>
+                                            <b>Category</b>
+                                        </lable>
+                                        <select style="max-width:100%;padding-left: 20px;" name="Category" onchange ="SkillSearchR();" class="form-control input-sm" id="select1" onchange="">
+                                            <option value="Select">Select</option>
+                                        </select>
+                                    </form>
+                                </div>
+                                <div class="col-sm-4 col-sm-offset-3" style="left: 15px;margin-top:30px;">
+                                    <div class="row44">
+                                        <label>Skill Set Keywords</label>
+                                    </div>
+                                    <div class="row43">
+                                        <form id="Form_SkillSet2">
+                                        <input type="text" name="search" placeholder="KeyWords.." onkeyup="SkillSearchR();" id="Skills_SkillSearch" style="width: 220px;margin-left: 0px;padding-left: 5px; margin-top:0px;">
+                                    </form>
+                                    </div>
+                                </div>
+                                <div class="col-sm-1" style="margin-top:55px;">
+                                    <input type="submit" value="Search" onclick="SkillSearchSkills();">
+                                </div>
+                                        
+                                   <div class="col-sm-1" style="float:right;right-margin:20px;padding-right:0px;"><button onclick="SkillSearchR1();SkillSearchR();" type="button" class="btn btn-default btn-sm" style="float:right;">
+                                                         <span class="glyphicon glyphicon-refresh"></span></button>
+                                   </div>
+                                
+                            </div>
+                            <div class="row9" style="height:325px;">
+                                <div class="col-sm-6" style="padding-left: 45px;">
+                                    <div id="SeconB_Second_Header"></div>
+                                    <div id="SecondB_Second">
+                                        <div id="secondPageSecondTable_R">
+                                        </div>
+                                    </div>
+                                    <iframe id="frameDDD" style="display:none"></iframe>
+                                    <button type="button" id="mergeDownload_Second" onclick="downloadMulti3();" style="visibility: hidden;">Download</button>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="row12345">
+                                        <label style="margin-left:15px;">Resume WordCloud</label>
+                                    </div>
+                                    <div class="col-sm-6" id="WorldCloudSpace_Second">
+                                        <img src="static/images/wordcloud1.png" alt="Wordcloud" id='WorldCloud_Second' style="margin-left:0px;margin-top:0px;width: 450px;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row99">
+                                <div class="col-sm-4">
+                                <!-- <button style="margin-left:40px;">Email</button> -->
+                            </div>
+                            <div class="col-sm-6" id="skillSetUpload">
+                             
+                            </div>
+                            </div>
+                        </div>
+                        <div id="DC" class="tab-pane fade">
+                            <div class="row1" id="LastTAbletable" style="height: 381px;padding-top: 48px;
+                            padding-left: 15px;">
+                                <div id="labelForbb1">
+                                    <!-- Change -->
+                                    <b>Category Details</b>
+                                </div>
+                                <div id="b1">
+                                    <div id="FirstHeadheader1">
+                                        <!-- Change -->
+                                    </div>
+                                    <div id="SecondHeadheader1">
+                                        <!-- Change -->
+                                    </div>
+                                    <table id="LastTableDown"></table>
+                                </div>
+                                <iframe id="frameDDD" style="display:none"></iframe>
+                                <button type="button" id="mergeDownload_Last" onclick="downloadMulti4();" style="visibility: hidden;">Download</button>
+                            </div>
+                            <div class="row896">
+                                <div class="col-sm-4">
+                                <!-- <button style="margin-left:40px;">Email</button> -->
+                            </div>
+                            <div class="col-sm-6" id="downloadNotify">
+                                
+                            </div>
+                            </div>
+                        </div>
+        
+        
+        
+                    </div>
+        
+                </div>
+            </div>
+       
+    <div id="UR" class="tabcontent" style="color:#0000b3">
+
+        <div class="newRow_1">
+            <div id="upload" class="tab-pane fade in active">
+                <div class="row111" style="min-height:100px;">
+                    <iframe width="0" height="0" border="0" name="dummyframe" id="dummyframe"></iframe>
+                    <form id="form_upload" action="http://127.0.0.1:5000/uploadFiles" target="dummyframe" method="post" enctype="multipart/form-data">
+                        <div class="col-sm-4">
+                            <div class="divbb" style=" margin-top:20px;    margin-left: 35px;">
+                                <input class="SecondClassDropdown" onclick="UploadR();adminReturning();" id="fileInput_admin" type="file" name="file[]" size="50" style="padding-top: 4px;
+                                                            padding-left: 5px;" multiple=''>
+                            </div>
+                        </div>
+                        <div class="col-sm-2 col-sm-offset-2">
+                            <button style="margin-left:45px;margin-top: 24px;">Upload</button>
+                        </div>
+                    </form>
+                        <div class="col-sm-1" style="margin:5px;">
+                            <button onclick="newCount();adminReturning3();" style="margin-top: 18px;">Submit</button>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="newRow_2">
+            <div class="col-sm-6">
+            <div id="AdminPanelFirstTable" style="margin-left:30px">
+                <div id="labelForbb">
+                    <!-- Change -->
+                    <b>Category Details</b>
+                </div>
+                <div id="b_upload">
+                    <div id="FirstHeadheader_upload">
+                        <!-- Change -->
+                    </div>
+                    <div id="SecondHeadheader_upload">
+                        <!-- Change -->
+                    </div>
+                    <table id="dvTable_upload"></table>
+                </div>
+            </div>
+            </div>
+            <div class="col-sm-6">
+              <div id="secondTable_downloadCat_lable"></div>
+              <div id="secondTable_downloadCat">
+               <div id="new_UPHead">
+                 <span id="newHeader_upload">
+                 </span>
+                <span id="Total_newHeader"></span></div>
+                <div id="Total_table"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <div id="Admin Panel" class="tabcontent" style="color:#0000b3" "background-color:#0000b3">
+            <div class="container-fuil">
+                <ul class="nav nav-tabs" id="tabs">
+                    
+                    <li class="active">
+                        <a data-toggle="tab" href="#RC" onclick="adminReturning3();">
+                            <b>Refresh Category</b>
+                        </a>
+                    </li>
+                    <li>
+                        <a data-toggle="tab" href="#CC" onclick="adminReturning4();">
+                            <b>Re-Categorization</b>
+                        </a>
+                    </li>
+                    <li >
+                        <a data-toggle="tab" href="#ANC" onclick="returning();">
+                            <b>Add New Category</b>
+                        </a>
+                    </li>
+
+                </ul>
+                <div class="tab-content">
+                    
+                    <div id="RC" class="tab-pane fade in active">
+                        <div id="refresh" class="tab-pane fade in active">
+                            <div class="row122" style="min-height:260px;">
+                                <div class=col-sm-6 >
+                                    <div id="AdminPanelSecondTable1" style="margin-top:0px;">
+                                        <div class="labelForbb" id='reRefresh1' style="padding-right:0px;margin-top:0px;">
+                                            <!-- Change -->
+                                            <b>Category Details</b>
+                                            <!-- bold changed by Avi due to equality*/ -->
+                                        </div>
+                                        <div id="b_refresh">
+                                            <div id="FirstHeadheader_Refresh">
+                                                <!-- Change -->
+                                            </div>
+                                            <div id="SecondHeadheader_Refresh">
+                                                <!-- Change -->
+                                            </div>
+                                            <table id="dvTable_refresh"></table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6" style="padding-right:0px;margin-top:0px;">
+                                    <div id="lableWord" style="margin-top:0px;"><b>Resume Details:</b>
+                                    <button type="button" class="btn btn-default btn-sm" style="float: right;" onclick="adminReturning3();RefreshRemove();RefreshRemove1();">
+                                        <span class="glyphicon glyphicon-refresh" ></span></button></div>
+                                <div >
+                                    <img id="AdminPanelSecondWordCloud"  src="static/images/wordcloud1.png" >
+                                </div>
+                                </div>
+                            </div>
+                            <div class="row122_new" >
+                                <div class=col-sm-9 id="AddMoreDetails_onRefresh">
+                                    <div id="dv_onRefresh_text"></div>
+                                    <div id="dv_onRefresh">
+                                        <table id="dvTable_onRefresh"></table>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3">
+                                    <span>
+                                    <button style="margin-top:10px;" id="Confirm_Refresh" type="button" onclick="Confirm1();RefreshRemove();">Confirm</button>
+                                    </span>
+                                    <span><button onclick="RefreshRemove1();">Cancel</button></span>
+                                    <div id="Refresh_message"></div>
+                                </div>
+                                <!-- The Modal -->
+                                <div id="myModal" class="modal">
+                                    <!-- The Close Button -->
+                                    <span class="close">&times;</span>
+                                    <!-- Modal Content (The Image) -->
+                                    <img class="modal-content" id="img01">
+                                    <!-- Modal Caption (Image Text) -->
+                                 <div id="caption"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="CC" class="tab-pane fade">
+                        <div class="row311" style="min-height:75px;margin-top:0px;">
+                            <div class="col-sm-3" style="margin-top: 19px;padding-left:30px;">
+
+                                <div>
+                                    <lable class="SecondClassDropdown" style="margin-top:17px;">
+                                        <b>Category</b>
+                                    </lable>
+                                </div>
+                                <select id='DropDownSecondPage2' style="width:100%; margin-top:4px;" onchange="ReCatRemove();" name="Category" class="form-control input-sm">
+                                    <option value="Select">Select</option>
+                                </select>
+
+                            </div>
+                            <div class="col-sm-4" style="margin-top:6px;padding-left: 10px;">
+                                <label style="margin-top:10px;">Upload</label>
+                                <div style=" margin-top:0px;">
+
+                                    <iframe width="0" height="0" border="0" name="dummyframe" id="dummyframe" style="border-left-width: 0px;
+                                    border-bottom-width: 0px;
+                                    border-top-width: 0px;
+                                    border-right-width: 0px;">></iframe>
+                                    <form id="formRecat" action="http://127.0.0.1:5000/uploadReCat" target="dummyframe" method="post" enctype="multipart/form-data">
+                                        <div class="row999">
+                                            <div class="col-sm-9" style="     padding-left: 5px;   margin-top: 0px;bottom: 21px; right: 0px;">
+                                                <input class="FirstClassDropdownReCat" id="fileInput" type="file" name="file" size="50" onchange="dropDownRecat1();ReCatRemove();" style="margin-top:0px;padding-top: 5px;padding-left: 5px; width: 100%;
+                                                height: 35px;
+                                            
+                                                border: 2px solid #ddd;
+                                                border-radius: 4px;">
+                                            </div>
+                                            <div class="col-sm-3" style="margin-top:0px;bottom: 18px; left: 5px;    padding-left: 0px;">
+                                                <input class="FirstClassDropdownRe" type="submit" value="Upload File">
+                                            </div>
+                                        </div>
+                                    </form>
+
+
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="col-sm-3" style="margin-top:22px;">
+                                <lable style="margin-bottom:5px;">
+                                    <b>Re-write Existing</b>
+                                </lable>
+                                <select id="reWrite" style="width:100%" class="form-control input-sm" name="Category">
+                                    <option value="Select">Select</option>
+                                    <option value="Yes">Yes</option>
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-1" style="margin-top:30px;">
+                                    <button onclick="adminReturning5()" style="margin-top:12px;" id="AddMore_Button">Submit</button>
+                            </div>
+                            <div class="col-sm-1" style="padding-right:0px;padding-left:0px;">
+                                <button type="button" class="btn btn-default btn-sm"style="float:right;" onclick="adminReturning4();ReCatRemove();ReCatRemove2();">
+                                        <span class="glyphicon glyphicon-refresh" ></span></button>
+                                
+                            </div>
+
+
+                        </div>
+                        <div class="row3115" style="margin-left:285px;" id="fileuploadmsg">
+
+                        </div>
+
+
+                        <div class="row312" style="min-height:320px;">
+                            <div class=col-sm-6>
+                                <div id="AdminPanelSecondTable" >
+                                    <div class="labelForbb" id='reRefresh1' style="margin-top:40px;">
+                                        <!-- Change -->
+                                        Category Details
+                                        <!-- bold changed by Avi due to equality*/ -->
+                                    </div>
+                                    <div id="b_refresh">
+                                        <div id="FirstHeadheader_Refresh_avi">
+                                            <!-- Change -->
+                                        </div>
+                                        <div id="SecondHeadheader_Refresh_avi">
+                                            <!-- Change -->
+                                        </div>
+                                        <table id="dvTable_refresh_avi"></table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=col-sm-6 id="AddMoreDetails">
+                                <div id="uploaded_addmore_uuu"></div>
+                                <div id="AdminPanelSecondTable_uuu">
+                                    <div class="labelForbb" id='reRefresh1_uuu'>
+                                        <!-- Change -->
+                                        <!--Category Details -->
+                                        <!-- bold changed by Avi due to equality*/ -->
+                                    </div>
+                                    <div id="b_refresh_uuu">
+                                        <div id="FirstHeadheader_Refresh_avi2">
+                                            <!-- Change -->
+                                        </div>
+                                        <div id="SecondHeadheader_Refresh_avi2">
+                                            <!-- Change -->
+                                        </div>
+                                        <div id="SecondHeadheader_upload_Recat">
+
+                                        </div>
+                                        <table id="dvTable_refresh_avi2" ></table>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="row313">
+                            <div class="col-sm-4"></div>
+                            <div class="col-sm-4" style="text-align:center;">
+                                <span>
+                            <button onclick="adminReturning4();adminReturning6();adminReturning4();" style="text-align:center;" >Confirm</button></span>
+                            <span><button onclick="ReCatRemove();ReCatRemove2();">Cancel</button></span>
+                             <div id="Recategorization_message"></div>
+                            </div>
+                            <div class="col-sm-4"></div>
+                        </div>
+                        <div class="row314" id="submission" style="margin-top:15px;margin-left:450px;">
+                        </div>
+
+                    </div>
+                    <div id="ANC" class="tab-pane fade ">
+                        <div class="row007" style="min-height:30px;">
+                                <div class="col-sm-1 col-sm-offset-11" style="padding-right:0px;">
+                                        <button type="button" class="btn btn-default btn-sm" style="margin-top: 0px;float:right;" onclick="returning();AddRemove();AddRemove2();">
+                                                <span class="glyphicon glyphicon-refresh" ></span></button>
+                                </div>
+
+                        </div>
+                        <div class="row4" style="min-height:80px;">
+                            <div class="col-sm-12">
+                                <!-- Changed by U -->
+                                <iframe width="0" height="0" border="0" name="dummyframe" id="dummyframe"></iframe>
+                                <form id="form1" action="http://127.0.0.1:5000/upload" target="dummyframe" method="post" enctype="multipart/form-data">
+                                    <div class="col-sm-4">
+                                        <div class="row441">
+                                            <lable class="FirstClassDropdown">
+                                                <b>Add Category</b>
+                                            </lable>
+                                        </div>
+                                        <input class="FirstClassDropdown" id="cat" type="text" name="search" placeholder="Enter New Category Name.." style="    margin-top: 0px;
+                                        padding-left: 5px;
+                                        height: 35px;
+                                        width: 100%;">
+                                    </div>
+                                    <div class="col-sm-4" style="margin:0px;">
+                                        <div class="row551">
+                                            <label style="margin-bottom:0px;">Upload</label>
+                                        </div>
+                                        <div class="divbb" style="margin:0px;">
+                                            <input class="FirstClassDropdown" id="fileInput_add" type="file" name="file" size="50" onchange="chang();AddRemove();" style="margin-top:0px;padding-top: 5px;padding-left: 5px;">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-1" style="margin:5px;">
+                                        <input class="FirstClassDropdown" type="submit" value="Upload File" onclick="returning();AddRemove();" style="margin-top: 18px;">
+                                    </div>
+                                </form>
+                                <div class="col-sm-1" style="margin:5px;">
+                                        
+                                    <button class="FirstClassDropdown" onclick="returning();GenerateTable2();"
+                                        style="margin-top: 18px;">Submit</button>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                        <div class="row5">
+                            <!-- Changed by U -->
+                            <div class="col-sm-6" style="padding-left: 30px;">
+                                <div id="labelForbb">
+                                    <!-- Change -->
+                                    <b>Category Details</b>
+                                </div>
+                                <div id="b">
+                                    <div id="FirstHeadheader">
+                                        <!-- Change -->
+                                    </div>
+                                    <div id="SecondHeadheader">
+                                        <!-- Change -->
+                                    </div>
+                                    <table id="dvTable"></table>
+                                </div>
+                            </div>
+                            <div class="col-sm-6" style="margin-top: 26px;">
+                                <div id="uploadedFile">
+                                    <table id="uploadedFile_table"></table>
+                                </div>
+                                <div id="dvUN">
+                                    <table id="dvTable1"></table>
+                                </div>
+                                <div>
+                                    <!-- Changed -->
+                                    <iframe id="frameDD" style="display:none"></iframe>
+                                    <button type="button" id="mergeDownload" onclick="downloadMulti();" style="visibility: hidden; margin-top:5px; margin-left:346px; ">Download</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row5_1">
+                          <div class="col-sm-4">
+                          </div>
+                          <div class="col-sm-4" style="text-align:center;">
+                              <span>
+                            <button type="button" onclick="Confirm2();adminReturning4();adminReturning();DownDownload();returning();">Confirm</button>
+                               </span>
+                               <span><button type="button" onclick="AddCancel();">Cancel</button></span>
+                            <div id="ConfirmMessage2"></div>
+                          </div>
+                          <div class="col-sm-4"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script>
+            function openCity(evt, cityName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(cityName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+        $(document).ready(function () {
+            $('#AddMoreDetails').hide()
+            $('#AddMore_Button').click(function () {
+                $("#AddMoreDetails").fadeToggle('fast');
+            });
+        });
+        $(document).ready(function () {
+            $('#AddMoreDetails1').hide()
+            $('#AddMore_Button1').click(function () {
+                $("#AddMoreDetails1").fadeToggle('fast');
+            });
+        });
+    </script>
+
+</body>
+
+</html>
